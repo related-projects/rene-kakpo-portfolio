@@ -44,7 +44,7 @@ const Hero = () => {
           {/* Description */}
           <p className="max-w-2xl text-lg md:text-xl text-muted-foreground leading-relaxed">
             Building elegant mobile experiences with Swift, SwiftUI, and Clean Architecture. 
-            Specialized in crafting high-performance iOS applications with over 6 years of expertise.
+            Specialized in crafting high-performance iOS applications with over 7 years of expertise.
           </p>
 
           {/* CTA Buttons */}
