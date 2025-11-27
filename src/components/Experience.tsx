@@ -5,6 +5,22 @@ import { Briefcase, Calendar, MapPin } from "lucide-react";
 const Experience = () => {
   const experiences = [
     {
+      title: "Senior iOS Developer",
+      company: "WorkerNav",
+      companyUrl: "https://www.workernav.com/fr",
+      type: "Freelance",
+      location: "Remote",
+      period: "April 2025 - November 2025",
+      achievements: [
+        "Led the full rebuild of the iOS v3 app using SwiftUI and Clean Architecture",
+        "Integrated AI-powered modules for automated field reports, improving worker efficiency",
+        "Collaborated closely with design and backend teams to ensure a consistent, performant multi-platform experience",
+        "Implemented modern iOS patterns and best practices for maintainable, scalable codebase",
+        "Delivered high-quality features on schedule with comprehensive testing coverage",
+      ],
+      technologies: ["Swift", "SwiftUI", "Clean Architecture", "AI Integration", "CoreData", "Combine"],
+    },
+    {
       title: "Lead Mobile Developer",
       company: "RightCom",
       type: "Full-time",
@@ -22,52 +38,7 @@ const Experience = () => {
       technologies: ["React Native", "Expo", "Kotlin", "BLE", "Firebase", "REST APIs"],
     },
     {
-      title: "Mobile Developer (Freelance)",
-      company: "Hoxtel Group",
-      type: "Freelance",
-      location: "Tunis, Tunisia (Remote)",
-      period: "October 2025 - November 2025",
-      achievements: [
-        "Developed Android tablet application for smart hotel room management system",
-        "Integrated complete IoT system using MQTT for real-time device communication",
-        "Implemented controls for doors, lights, curtains, and HVAC systems",
-        "Developed custom Kotlin modules for advanced native functionality",
-        "Created modern, intuitive UI optimized for large-screen displays",
-        "Built REST API integration for centralized device management",
-      ],
-      technologies: ["React Native", "Expo", "Kotlin", "MQTT", "IoT", "REST APIs"],
-    },
-    {
-      title: "Mobile Developer (Freelance)",
-      company: "Ministry of Tourism of Benin",
-      type: "Freelance",
-      location: "Cotonou, Benin",
-      period: "June 2025 - July 2025",
-      achievements: [
-        "Developed mobile app for rating tourist sites, hotels, and restaurants",
-        "Implemented star-based rating system with user reviews",
-        "Created intuitive interface for exploring tourism destinations",
-        "Integrated geolocation features for discovering nearby attractions",
-      ],
-      technologies: ["React Native", "Firebase", "Google Maps API"],
-    },
-    {
-      title: "Mobile Developer (Freelance)",
-      company: "AgriBiz",
-      type: "Freelance",
-      location: "Cotonou, Benin",
-      period: "October 2024 - December 2025",
-      achievements: [
-        "Developed comprehensive agriculture management mobile application",
-        "Implemented farm site monitoring and statistics tracking system",
-        "Built team management features with task assignment and progress tracking",
-        "Integrated real-time chat functionality for team communication",
-        "Created data visualization dashboards for farm analytics",
-      ],
-      technologies: ["React Native", "Firebase", "Charts", "Real-time Database"],
-    },
-    {
-      title: "Mobile Engineer (Intern)",
+      title: "Mobile Engineer",
       company: "RightCom",
       type: "Internship",
       location: "Cotonou, Benin",
@@ -107,7 +78,18 @@ const Experience = () => {
                     <h3 className="text-2xl font-bold">{exp.title}</h3>
                     <div className="flex items-center gap-2 text-lg text-primary">
                       <Briefcase className="w-5 h-5" />
-                      <span className="font-semibold">{exp.company}</span>
+                      {exp.companyUrl ? (
+                        <a 
+                          href={exp.companyUrl} 
+                          target="_blank" 
+                          rel="noopener noreferrer"
+                          className="font-semibold hover:underline"
+                        >
+                          {exp.company}
+                        </a>
+                      ) : (
+                        <span className="font-semibold">{exp.company}</span>
+                      )}
                     </div>
                   </div>
                   <Badge variant="outline" className="border-primary/30 w-fit">

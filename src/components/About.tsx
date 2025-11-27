@@ -3,7 +3,7 @@ import { CheckCircle2 } from "lucide-react";
 
 const About = () => {
   const highlights = [
-    "6+ years of mobile development experience",
+    "7+ years of mobile development experience",
     "Lead Mobile Developer at RightCom",
     "Expert in iOS (Swift, SwiftUI) & Android (Kotlin)",
     "Cross-platform specialist (React Native, Flutter, KMM)",
@@ -27,7 +27,7 @@ const About = () => {
             </div>
             {/* Floating Stats */}
             <div className="absolute -bottom-6 -right-6 bg-card p-6 rounded-2xl shadow-xl border border-border card-glow">
-              <div className="text-3xl font-bold gradient-text">6+</div>
+              <div className="text-3xl font-bold gradient-text">7+</div>
               <div className="text-sm text-muted-foreground">Years Experience</div>
             </div>
           </div>
@@ -44,7 +44,7 @@ const About = () => {
             <div className="space-y-4 text-lg text-muted-foreground leading-relaxed">
               <p>
                 I'm a passionate Senior Mobile Developer specializing in iOS development with Swift and SwiftUI. 
-                With over 6 years of experience, I've built high-performance applications that prioritize clean 
+                With over 7 years of experience, I've built high-performance applications that prioritize clean 
                 architecture, code quality, and exceptional user experiences.
               </p>
               <p>
